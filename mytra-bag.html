@@ -1,0 +1,39 @@
+<!-- Bag Excercise  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mytra bag Excercise</title>
+</head>
+<style>
+   
+    button{
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #90ee90;
+        border: 0;
+        font-size: 2vw;
+    }
+</style>
+<body style="display: flex; align-items: center; justify-content: center; gap: 30px;">
+    <button onclick="cardQunadtity += 1;
+    document.querySelector('#d-b').innerText = `Your card have ${cardQunadtity} items`;
+    ">Add to bag</button>
+    <button 
+    onclick="cardQunadtity -= 1;
+    document.querySelector('#d-b').innerText = `Your card have ${cardQunadtity} items`;
+    "
+    >Move to wishlist</button>
+    <button
+    onclick="cardQunadtity += 2;
+    document.querySelector('#d-b').innerText = `Your card have ${cardQunadtity} items`;
+    "
+    >Add 1 + 1 sale item</button>
+<h1 id="d-b"></h1>
+    <script>
+     let cardQunadtity = 0;
+     document.querySelector("#d-b").innerText = `Your card have ${cardQunadtity} items`;
+    </script>
+</body>
+</html>
